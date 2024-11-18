@@ -16,7 +16,7 @@ from sklearn.preprocessing import OrdinalEncoder
 
 st.set_page_config(layout="wide")
 
-st.title("Trabalho do Grau B - Ciências de Dados e Big Data")
+st.title("Trabalho do Grau B - Ciência de Dados e Big Data")
 st.header("Autores: ")
 st.subheader("Aluno 1: Jones Marlos Pinheiro da Rosa")
 st.subheader("Aluno 2: Igor da Silva Cassolli", divider="gray")
