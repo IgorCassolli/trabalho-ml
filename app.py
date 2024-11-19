@@ -78,31 +78,31 @@ inGamePurchasesMap = {
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    age = st.number_input('Age in years', step=1, value=0)
+    age = st.number_input('Idade:', step=1, value=0)
 with col2:
-    gender = st.selectbox("Gender", ("Male", "Female"))
+    gender = st.selectbox("Gênero:", ("Male", "Female"))
 with col3:
-    location = st.selectbox("Location", ("Asia", "Europe", "USA", "Other"))
+    location = st.selectbox("Localização:", ("Asia", "Europe", "USA", "Other"))
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    game_genre = st.selectbox("Game Genre", ("Action", "RPG", "Simulation", "Sports", "Strategy"))
+    game_genre = st.selectbox("Gênero do jogo:", ("Action", "RPG", "Simulation", "Sports", "Strategy"))
 with col2:
-    game_difficulty = st.selectbox("Game Difficulty", ("Easy", "Medium", "Hard"))
+    game_difficulty = st.selectbox("Dificuldade do jogo:", ("Easy", "Medium", "Hard"))
 with col3:
-    in_game_purchases = inGamePurchasesMap[st.selectbox("In Game Purchases", ("Não", "Sim"))]
+    in_game_purchases = inGamePurchasesMap[st.selectbox("Tem compras no jogo?", ("Não", "Sim"))]
 with col4:
-    achievements_unlocked = st.number_input('Achievements Unlocked', step=1, value=0)
+    achievements_unlocked = st.number_input('Número de conquistas desbloqueadas:', step=1, value=0)
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    play_time_hours = st.number_input('Play Time Hours', step=0.1, value=0.0)
+    play_time_hours = st.number_input('Média de horas jogadas por sessões:', step=0.1, value=0.0)
 with col2:
-    sessions_per_week = st.number_input('Sessions Per Week', step=1, value=0)
+    sessions_per_week = st.number_input('Número de sessões de jogo por semana:', step=1, value=0)
 with col3:
-    avg_session_duration_minutes = st.number_input('Avg Session in Minutes', step=1, value=0)
+    avg_session_duration_minutes = st.number_input('Duração média de cada sessão:', step=1, value=0)
 with col4:
-    player_level = st.number_input('Player Level', step=1, value=0)
+    player_level = st.number_input('Nível atual do jogador:', step=1, value=0)
 
 submit = st.button('Predizer')
 
